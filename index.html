@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Haryana eChallan Mirror</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Haryana eChallan — Mirror (Demo)</h1>
+      <p class="lead">Search challans by <strong>Vehicle No</strong>, <strong>DL No</strong>, or <strong>Challan No</strong>. (Demo data only)</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="search-section card">
+      <label for="searchInput">Enter Vehicle No / DL No / Challan No</label>
+      <div class="input-row">
+        <input id="searchInput" placeholder="e.g. HR26AB1234 or DL-0420150001234 or CHL-2025-0001" />
+        <button id="searchBtn">Search</button>
+      </div>
+      <div class="options-row">
+        <label><input type="radio" name="searchType" value="vehicle" checked> Vehicle No</label>
+        <label><input type="radio" name="searchType" value="dl"> DL No</label>
+        <label><input type="radio" name="searchType" value="challan"> Challan No</label>
+      </div>
+    </section>
+
+    <section id="results" class="card results">
+      <h2>Results</h2>
+      <div id="resultsBody" class="results-body">
+        <p class="muted">No search yet. Enter a value above and click <strong>Search</strong>.</p>
+      </div>
+    </section>
+
+    <section class="card note">
+      <h3>About this mirror</h3>
+      <p>This is a <strong>read-only demo mirror</strong>. It uses mock JSON data and <em>does not</em> connect to official Haryana/Parivahan servers. It's intended to be hosted publicly (GitHub Pages / Netlify / Cloudflare Pages) so you can access it from anywhere including Canada.</p>
+      <p>If you want real-time official data, we can later add a backend proxy to fetch from the official portal (requires careful handling & permissions).</p>
+    </section>
+
+    <footer class="card footer">
+      <small>Made for demo purposes. Do not use for payments or legal actions.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
