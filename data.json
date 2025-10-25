@@ -1,0 +1,29 @@
+[
+  {
+    "challan_no": "CHL-2025-0001",
+    "vehicle_no": "HR26AB1234",
+    "dl_no": "DL-0420150001234",
+    "offense": "Over-speeding (80kmph)",
+    "date": "2025-05-10",
+    "fine": 1000,
+    "status": "PENDING"
+  },
+  {
+    "challan_no": "CHL-2025-0002",
+    "vehicle_no": "HR55CD4321",
+    "dl_no": "DL-0620140005678",
+    "offense": "Signal Violation",
+    "date": "2025-06-01",
+    "fine": 500,
+    "status": "PAID"
+  },
+  {
+    "challan_no": "CHL-2024-0789",
+    "vehicle_no": "HR26AB1234",
+    "dl_no": "DL-0420150001234",
+    "offense": "No Helmet",
+    "date": "2024-11-20",
+    "fine": 200,
+    "status": "PAID"
+  }
+]
